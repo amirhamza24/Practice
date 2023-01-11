@@ -1,0 +1,271 @@
+.box {
+    width: 800px;
+    height: 200px;
+    background: #000;
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+}
+
+.ball-1 {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    animation-name: bounce-1;
+    animation-duration: 1s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes bounce-1 {
+    0% {
+        top: 0;
+        left: 0;
+        background: #fff;
+    }
+
+    25% {
+        top: 165px;
+        left: 200px;
+        background: #ffff00;
+    }
+
+    50% {
+        top: 0px;
+        left: 400px;
+        background: #fff;
+    }
+
+    75% {
+        top: 165px;
+        left: 600px;
+        background: #ffff00;
+    }
+
+    100% {
+        top: 0px;
+        left: 765px;
+        background: #fff;
+    }
+}
+
+.ball-2 {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-name: bounce-2;
+    animation-duration: .9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 1s;
+}
+
+@keyframes bounce-2 {
+    0% {
+        top: 0;
+        right: 0;
+        background: #fff;
+    }
+
+    25% {
+        top: 165px;
+        right: 200px;
+        background: #ffff00;
+    }
+
+    50% {
+        top: 0;
+        right: 400;
+        background: #fff;
+    }
+
+    75% {
+        top: 165px;
+        right: 600px;
+        background: #ffff00;
+    }
+
+    100% {
+        top: 0;
+        right: 765px;
+        background: #fff;
+    }
+}
+
+.ball-3 {
+    position: absolute;
+    bottom: 0;
+    background: #ffff00;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    animation-name: bounce-3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes bounce-3 {
+    0% {
+        bottom: 0;
+        left: 0;
+        background: #ffff00;
+    }
+
+    25% {
+        bottom: 165px;
+        left: 200px;
+        background: #fff;
+    }
+
+    50% {
+        bottom: 0px;
+        left: 400px;
+        background: #ffff00;
+    }
+
+    75% {
+        bottom: 165px;
+        left: 600px;
+        background: #fff;
+    }
+
+    100% {
+        bottom: 0px;
+        left: 765px;
+        background: #ffff00;
+    }
+}
+
+.ball-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ffff00;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    animation-name: bounce-4;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes bounce-4 {
+    0% {
+        bottom: 0;
+        right: 0;
+        background: #ffff00;
+    }
+
+    25% {
+        bottom: 165px;
+        rightt: 200px;
+        background: #fff;
+    }
+
+    50% {
+        bottom: 0px;
+        rightt: 400px;
+        background: #ffff00;
+    }
+
+    75% {
+        bottom: 165px;
+        right: 600px;
+        background: #fff;
+    }
+
+    100% {
+        bottom: 0px;
+        right: 765px;
+        background: #ffff00;
+    }
+}
+
+.ball-5 {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 80px;
+    animation-name: bounce-5;
+    animation-duration: 0.2s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes bounce-5 {
+    0% {
+        left: 0px;
+        background: #fff;
+    }
+
+    25% {
+        background: #ffff00;
+    }
+
+    50% {
+        background: #fff;
+    }
+
+    75% {
+        background: #ffff00;
+    }
+
+    100% {
+        left: 765px;
+        background: #fff; 
+    }
+}
+
+
+.ball-6 {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 0px;
+    left: 50%;
+    animation-name: bounce-6;
+    animation-duration: 0.2s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes bounce-6 {
+    0% {
+        top: 0px;
+        background: #fff;
+    }
+
+    100% {
+        top: 165px;
+        background: #ffff00; 
+    }
+}
