@@ -1,0 +1,6 @@
+@media screen and (max-width:640px) {
+    .btn-sm {
+        margin-bottom: 28px;
+        background: #f3f1f1;
+    }
+}

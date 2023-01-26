@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+
+  <!-- Tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+              }
+          }
+      }
+  </script>
+
+  <!-- Font Family CDN -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Manrope:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+  <!-- CSS File Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="w-full px-5 md:w-4/5 my-16 mx-auto">
+        <div class="flex justify-center md:flex-row flex-col">
+            <div class="space-y-6 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight text-gray-800">
+                    It's good <br>
+                    tea time at The <br>
+                    Tea House
+                </h1>
+
+                <p class="text-gray-500">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+
+                <!-- linear-gradient(270deg, #FF0000 0%, #FF8938 100%); -->
+                <button class="py-4 px-6 bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-lg text-white font-semibold">
+                Explore Manrope
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                </button>
+            </div>
+
+            <div class="mt-7 md:mt-0">
+                <img class="relative" src="images/banner.png" alt="">
+
+                <div class="flex items-center shadow-lg py-4 px-4 rounded-lg w-60 relative bottom-12 md:bottom-20 left-16 md:left-20 bg-white">
+                    <img class="h-10 w-10 mr-3" src="images/star.png" alt="">
+
+                    <div>
+                        <h3 class="font-semibold text-2xl">5.00</h3>
+                        <p class="text-gray-600">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <main>
+        <!-- Featured Section Start -->
+        <section class="w-4/5 my-5 mx-auto">
+            <div class="w-full md:w-5/6 mx-auto text-center ">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Featured Products</h2>
+
+                <p class="text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-8">
+                <div class="text-center rounded-lg p-6 bg-gradient-to-b from-[#F0F0F0] to-[#FFFFFF]">
+                    <div class="flex justify-center">
+                        <img class="mb-5" src="images/tea-1.png" alt="">
+                    </div>
+
+                    <h3 class="text-2xl font-bold my-2">Milk Tea</h3>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+
+                <div class="text-center rounded-lg p-6 bg-gradient-to-b from-[#F0F0F0] to-[#FFFFFF]">
+                    <div class="flex justify-center">
+                        <img class="mb-5" src="images/tea-2.png" alt="">
+                    </div>
+
+                    <h3 class="text-2xl font-bold my-2">Black Tea</h3>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+
+                <div class="text-center rounded-lg p-6 bg-gradient-to-b from-[#F0F0F0] to-[#FFFFFF]">
+                    <div class="flex justify-center">
+                        <img class="mb-5" src="images/tea-3.png" alt="">
+                    </div>
+
+                    <h3 class="text-2xl font-bold my-2">Lemon Tea</h3>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+
+                <div class="text-center rounded-lg p-6 bg-gradient-to-b from-[#F0F0F0] to-[#FFFFFF]">
+                    <div class="flex justify-center">
+                        <img class="mb-5" src="images/tea-4.png" alt="">
+                    </div>
+
+                    <h3 class="text-2xl font-bold my-2">Green Tea</h3>
+                    <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Featured Section End -->
+    </main>
+
+</body>
+
+</html>
