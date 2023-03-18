@@ -1,3 +1,4 @@
+// set real time
 const displayTime = () => {
     let dateTime = new Date()
     let hour = dateTime.getHours();
@@ -37,6 +38,7 @@ const displayTime = () => {
 setInterval(displayTime, 1000);
 
 
+// set todays date
 let today = new Date();
 let dayNumber = today.getDate();
 let year = today.getFullYear();
@@ -49,22 +51,23 @@ document.getElementById('day-number').innerHTML = dayNumber;
 document.getElementById('year').innerHTML = year;
 
 
-let dest = new Date('march 23, 2023 00:00:00').getTime();
+// time left
+let countDown = new Date('march 23, 2023 00:00:00').getTime();
 
 let x = setInterval(function() {
-    let now = new Date().getTime();
+    let nowTime = new Date().getTime();
 
-    let diff = dest - now;
-    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    let difference = countDown - nowTime;
+    let days = Math.floor(difference / (1000 * 60 * 60 * 24));
     // console.log(days);
 
-    let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     // console.log(hours);
 
-    let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     // console.log(minutes);
 
-    let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    let seconds = Math.floor((difference % (1000 * 60)) / 1000);
     // console.log(seconds);
 
     if(days < 10) {
