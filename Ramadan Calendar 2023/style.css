@@ -63,10 +63,18 @@
 
 .time-width {
     width: 292px;
+    height: 210px;
 }
 
 .table-head-text {
     font-weight: 600;
+    font-size: 17px;
 }
+
+@media only screen and (max-width: 576px) {
+    .time-width {
+        margin-top: 35px;
+    }
+  }
 
 /* 9006E4 */
