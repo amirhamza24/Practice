@@ -1,0 +1,72 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.body-bg {
+    background: #efefef;
+}
+
+.table-head {
+    background: #30469C
+}
+
+.first-ten {
+    /* background: #F3EBEB; */
+    background: #fff1f1;
+}
+
+.second-ten {
+    /* background: #e7fce5; */
+    background: #fefeea;
+    
+}
+
+.third-ten {
+    background: #e6f5ff;
+}
+
+.all-bg {
+    background: #fff;
+}
+
+.setTimeSize {
+    font-size: 13px;
+}
+
+.font-time {
+    font-size: 4rem;
+}
+
+.real-time-second {
+    font-size: 14px;
+}
+
+.hours-minutes-color {
+    color: #D706E4;
+}
+
+.calender {
+    color: #9006E4;
+    font-weight: 500;
+}
+
+.real-time {
+    font-weight: 500;
+    color: #08DBA1;
+}
+
+.time-left {
+    color: #9006E4;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.time-width {
+    width: 292px;
+}
+
+.table-head-text {
+    font-weight: 600;
+}
+
+/* 9006E4 */

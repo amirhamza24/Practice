@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Julee&family=Kaushan+Script&family=Manrope:wght@400;500;600;700;800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+
+        <div class="body-bg pb-5">
+            <div class="container">
+                <div class="text-center py-3">
+                    <h1 class="text-success fw-bolder">Mahe Ramadan Calendar-2023 <span class="fs-6 fw-normal">Bangladesh</span></h1>
+
+                    <div class="mb-5 mt-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-between">  
+                        <div class="border shadow p-3 time-width">
+                            <p class="mb-0 fs-3 real-time">Real Time</p>
+
+                            <div class="d-flex justify-content-center fs-1 fw-bolder text-primary mt-0">
+                                <span class="mr-2 font-time hours-minutes-color" id="hours">00</span>
+                                <span class="font-time hours-minutes-color">:</span>
+    
+                                <span class="font-time hours-minutes-color" id="minutes">00</span>
+                                <span></span>
+    
+                                <span class="d-flex flex-column justify-content-center ms-2">
+                                    <span class="fs-5" id="seconds"> 00</span>
+                                    <span class="real-time-second mt-1 text-success" id="session"> AM</span>
+                                </span>
+                            </div>
+
+                            <div class="calender">
+                                <span id="day-number">00</span>
+                                <span id="month-name">Month</span>
+                                <span id="day-name">Day</span>
+                                <span id="year">0000</span>
+                            </div>
+                        </div>
+
+                        <div class="left-time border shadow p-3 time-width">
+                            <p class="mb-0 fs-3 real-time">Time Left:</p>
+                            <p class="time-left" id="demo"></p>
+                        </div>
+
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <span class="text-danger">***Ramadan will start and end depending on the sighting of the moon***</span>
+                    <br>
+                    <span class="text-danger">***Only for Dhaka district***</span>
+                </div>
+
+                <table class="table table-striped text-center table-bordered border border-3 border-light shadow-sm">
+                    <thead class="table-head text-white fs-5">
+                        <tr>
+                            <th class="table-head-text" scope="col">Ramadan</th>
+                            <th class="table-head-text" scope="col">Date</th>
+                            <th class="table-head-text" scope="col">Day</th>
+                            <th class="table-head-text" scope="col">Sehri</th>
+                            <th class="table-head-text" scope="col">Iftar</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr class="first-ten">
+                            <th scope="row" class="">1</th>
+                            <td>23 March</td>
+                            <td>Thursday</td>
+                            <td>4:38 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:14 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+                        
+                        <tr class="all-bg">
+                            <th scope="row">2</th>
+                            <td>24 March</td>
+                            <td>Friday</td>
+                            <td>4:38 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:14 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+                        
+                        <tr class="first-ten">
+                            <th scope="row">3</th>
+                            <td>25 March</td>
+                            <td>Saturday</td>
+                            <td>4:37 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:14 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">4</th>
+                            <td>26 March</td>
+                            <td>Sunday</td>
+                            <td>4:36 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:15 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="first-ten">
+                            <th scope="row">5</th>
+                            <td>27 March</td>
+                            <td>Monday</td>
+                            <td>4:35 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:15 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">6</th>
+                            <td>28 March</td>
+                            <td>Tuesday</td>
+                            <td>4:34 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:16 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="first-ten">
+                            <th scope="row">7</th>
+                            <td>29 March</td>
+                            <td>Wednesday</td>
+                            <td>4:32 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:16 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">8</th>
+                            <td>30 March</td>
+                            <td>Thursday</td>
+                            <td>4:31 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:17 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="first-ten">
+                            <th scope="row">9</th>
+                            <td>31 March</td>
+                            <td>Friday</td>
+                            <td>4:30 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:17 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">10</th>
+                            <td>1 April</td>
+                            <td>Saturday</td>
+                            <td>4:29 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:18 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="second-ten">
+                            <th scope="row">11</th>
+                            <td>2 April</td>
+                            <td>Sunday</td>
+                            <td>4:28 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:18 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">12</th>
+                            <td>3 April</td>
+                            <td>Monday</td>
+                            <td>4:27 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:19 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="second-ten">
+                            <th scope="row">13</th>
+                            <td>4 April</td>
+                            <td>Tuesday</td>
+                            <td>4:26 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:19 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">14</th>
+                            <td>5 April</td>
+                            <td>Wednesday</td>
+                            <td>4:25 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:20 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="second-ten">
+                            <th scope="row">15</th>
+                            <td>6 April</td>
+                            <td>Thursday</td>
+                            <td>4:24 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:20 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">16</th>
+                            <td>7 April</td>
+                            <td>Friday</td>
+                            <td>4:23 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:21 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="second-ten">
+                            <th scope="row">17</th>
+                            <td>8 April</td>
+                            <td>Saturday</td>
+                            <td>4:22 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:21 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">18</th>
+                            <td>9 April</td>
+                            <td>Sunday</td>
+                            <td>4:21 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:22 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="second-ten">
+                            <th scope="row">19</th>
+                            <td>10 April</td>
+                            <td>Monday</td>
+                            <td>4:20 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:22 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">20</th>
+                            <td>11 April</td>
+                            <td>Tuesday</td>
+                            <td>4:19 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:22 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+                        
+                        <tr class="third-ten">
+                            <th scope="row">21</th>
+                            <td>12 April</td>
+                            <td>Wednesday</td>
+                            <td>4:18 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:23 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">22</th>
+                            <td>13 April</td>
+                            <td>Thursday</td>
+                            <td>4:16 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:23 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="third-ten">
+                            <th scope="row">23</th>
+                            <td>14 April</td>
+                            <td>Friday</td>
+                            <td>4:15 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:23 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">24</th>
+                            <td>15 April</td>
+                            <td>Saturday</td>
+                            <td>4:14 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:24 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="third-ten">
+                            <th scope="row">25</th>
+                            <td>16 April</td>
+                            <td>Sunday</td>
+                            <td>4:13 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:24 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">26</th>
+                            <td>17 April</td>
+                            <td>Monday</td>
+                            <td>4:12 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:24 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="third-ten">
+                            <th scope="row">27</th>
+                            <td>18 April</td>
+                            <td>Tuesday</td>
+                            <td>4:11 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:25 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">28</th>
+                            <td>19 April</td>
+                            <td>Wednesday</td>
+                            <td>4:10 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:25 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="third-ten">
+                            <th scope="row">29</th>
+                            <td>20 April</td>
+                            <td>Thursday</td>
+                            <td>4:09 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:26 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+
+                        <tr class="all-bg">
+                            <th scope="row">30</th>
+                            <td>21 April</td>
+                            <td>Friday</td>
+                            <td>4:08 <span class="text-success setTimeSize">AM</span></td>
+                            <td>6:26 <span class="text-success setTimeSize">PM</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        
+        <!-- bootstrap js cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- js file link -->
+        <script src="app.js"></script>
+    </body>
+</html>
