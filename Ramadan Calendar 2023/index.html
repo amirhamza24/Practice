@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Ramadan Calender 2023</title>
 
         <link rel="stylesheet" href="style.css">
 
@@ -19,11 +19,11 @@
     <body>
 
         <div class="body-bg pb-5">
-            <div class="container">
-                <div class="text-center py-3">
+            <div class="container-md">
+                <div class="text-center pb-3 pt-4">
                     <h1 class="text-success fw-bolder">Mahe Ramadan Calendar-2023 <span class="fs-6 fw-normal">Bangladesh</span></h1>
 
-                    <div class="mb-5 mt-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-between">  
+                    <div class="mb-5 mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-md-around">  
                         <div class="border shadow p-3 time-width">
                             <p class="mb-0 fs-3 real-time">Real Time</p>
 
@@ -32,9 +32,8 @@
                                 <span class="font-time hours-minutes-color">:</span>
     
                                 <span class="font-time hours-minutes-color" id="minutes">00</span>
-                                <span></span>
     
-                                <span class="d-flex flex-column justify-content-center ms-2">
+                                <span class="d-flex flex-column justify-content-center ms-1">
                                     <span class="fs-5" id="seconds"> 00</span>
                                     <span class="real-time-second mt-1 text-success" id="session"> AM</span>
                                 </span>
@@ -52,10 +51,6 @@
                             <p class="mb-0 fs-3 real-time">Time Left:</p>
                             <p class="time-left" id="demo"></p>
                         </div>
-
-                        <div>
-
-                        </div>
                     </div>
 
                     <span class="text-danger">***Ramadan will start and end depending on the sighting of the moon***</span>
@@ -63,8 +58,8 @@
                     <span class="text-danger">***Only for Dhaka district***</span>
                 </div>
 
-                <table class="table table-striped text-center table-bordered border border-3 border-light shadow-sm">
-                    <thead class="table-head text-white fs-5">
+                <table class="table table-striped text-center table-bordered border border-2 border-light shadow-sm">
+                    <thead class="table-head text-white fs-6">
                         <tr>
                             <th class="table-head-text" scope="col">Ramadan</th>
                             <th class="table-head-text" scope="col">Date</th>
